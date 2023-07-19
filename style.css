@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: black;
+
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+  
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+    margin-right: 5rem;
+}
+
+.navbar  a {
+    color: rgb(78, 78, 78);
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    transition: .25s;
+    border-radius: 10px;
+}
+
+.navbar  a:hover {
+    color: white;
+    background-color: rgb(47, 111, 170);
+    
+}
+main {
+    width: 100vw;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.scroll {
+    width: 300vw;
+    display: flex;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+span {
+    color: rgb(47, 111, 170);
+}
+h1 {
+    font-size: 3.5rem;
+}
+
+section > h1 {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.foto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    align-items: center;
+
+}
+
+.texto {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+    height: 200px
+}
+
+p {
+    margin-left: 2px;
+    text-align: justify;
+    font-size: 1.10rem;
+}
+
+#perfil {
+    border-radius: 100%;
+    aspect-ratio: 1 / 1;
+
+}
+
+#perfil:after {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.icons {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.icons a {
+    margin-left: 10px;
+}
+
+i {
+    color: rgb(47, 111, 170);
+    cursor: pointer;
+}
