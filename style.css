@@ -45,13 +45,14 @@ ul {
 }
 main {
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
     overflow: hidden;
 }
 
 .scroll {
     width: 300vw;
     display: flex;
+    flex-wrap: wrap;
 }
 
 section {
@@ -60,7 +61,7 @@ section {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
 }
 
 span {
@@ -103,13 +104,6 @@ p {
 
 }
 
-#perfil:after {
-    width: 300px;
-    height: 300px;
-    background-color: black;
-    border-radius: 20px;
-    position: absolute;
-}
 
 .icons {
     margin-top: 1rem;
@@ -123,4 +117,124 @@ p {
 i {
     color: rgb(47, 111, 170);
     cursor: pointer;
+}
+
+.slide {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.barra {
+    width: 80px;
+    height: 5px;
+    border-radius: 30px;
+    background-color: rgba(73, 73, 73, 0.363);
+    transition: .5s;
+}
+
+#barra1.barra.active {
+    background-color: rgba(73, 73, 73, 0.753);
+}
+
+#barra2.barra.active{
+    background-color: rgba(73, 73, 73, 0.753);
+}
+
+#barra3.barra.active{
+    background-color: rgba(73, 73, 73, 0.753);
+}
+
+.giro {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#javascript-logo {
+    transform: translateY(-90px);
+    animation: giroJavascript 3.5s infinite ease-in-out;
+}
+
+@keyframes giroJavascript {
+    0% {transform: translate3d(0px, -90px, 0px);}
+    25%{transform: translate3d(45px, 0px, 0px);}
+    50%{transform: translate3d(-45px, 0px, 0px);}
+}
+
+#java-logo {
+    animation: giroJava 3.5s infinite ease-in-out;
+}
+
+@keyframes giroJava {
+    0% {transform: translate3d(0px, 0px, 0px);}
+    25%{transform: translate3d(45px, -90px, 0px);}
+    50%{transform: translate3d(90px, 0px, 0px);}
+}
+
+#python-logo {
+    animation: giroPython 3.5s infinite ease-in-out;
+}
+
+@keyframes giroPython {
+    0% {transform: translate3d(0px, 0px, 0px);}
+    25%{transform: translate3d(-90px, 0px, 0px);}
+    50%{transform: translate3d(-45px, -90px, 0px);}
+}
+
+#stack {
+    align-items: center;
+    justify-content: center;
+}
+
+#stack p {
+    width: 500px;
+    text-align: center;
+}
+
+#stack h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#react-logo {
+    transform: translateY(-90px);
+    animation: giroReact 3.5s infinite ease-in-out;
+}
+
+@keyframes giroReact {
+    0% {transform: translate3d(0px, -90px, 0px);}
+    25%{transform: translate3d(-45px, 0px, 0px);}
+    50%{transform: translate3d(45px, 0px, 0px);}
+}
+
+#sass-logo {
+    animation: giroSass 3.5s infinite ease-in-out;
+}
+
+@keyframes giroSass {
+    0% {transform: translate3d(0px, 0px, 0px);}
+    25%{transform: translate3d(90px, 0px, 0px);}
+    50%{transform: translate3d(45px, -90px, 0px);}
+}
+
+#bootstrap-logo {
+    animation: giroBootstrap 3.5s infinite ease-in-out;
+}
+
+@keyframes giroBootstrap {
+    0% {transform: translate3d(0px, 0px, 0px);}
+    25%{transform: translate3d(-45px, -90px, 0px);}
+    50%{transform: translate3d(-90px, 0px, 0px);}
+}
+
+.linguagens {
+    margin-right: 30rem;
+}
+
+.frameworks {
+    margin-left: 30rem;
 }

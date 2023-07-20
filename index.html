@@ -10,9 +10,9 @@
 <body>
     <header>
         <ul class="navbar">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#stack">Stack</a></li>
-            <li><a href="#projetos">Projetos</a></li>
+            <li ><a id="navSobre" href="#sobre">Sobre</a></li>
+            <li ><a id="navStack" href="#stack">Stack</a></li>
+            <li ><a id="navProjetos" href="#projetos">Projetos</a></li>
         </ul>
     </header>
 
@@ -26,7 +26,7 @@
                     <div class="texto">
                         <p>Olá, sou o Carlos!</p>
                         <h1>React Developer<span>.</span></h1>
-                        <p>Faço tecnologia da informação na Universidade Federal do Rio Grande do Norte (UFRN) e desenvolvo projetos focados em front-end utilizando ferramentas como React, Sass e Bootstrap.</p>
+                        <p>Faço tecnologia da informação na Universidade Federal do Rio Grande do Norte (UFRN) e desenvolvo projetos focados em front-end utilizando frameworks como React, Sass e Bootstrap.</p>
 
                         <div class="icons">
                             <a href="https://github.com/CV1tor" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
@@ -37,13 +37,51 @@
                 </div>
             </section>
             <section id="stack">
-                <h1>Stack</h1>
+
+                
+                <div class="linguagens">
+                    
+                    <div class="giro">
+                        <img id="java-logo" src="img/java-icon.png" alt="Java logo">
+                        <img id="javascript-logo" src="img/javascript-icon.png" alt="Javascript logo">
+                        <img id="python-logo" src="img/python-icon.png" alt="Python logo">
+                    </div>
+
+                    <div class="texto2">
+                        <h1>Linguagens de Programação</h1>
+                        <p>Desenvolvo minhas aplicações prioritariamente baseadas no Javascript, porém tenho conhecimentos avançados em linguagem Java com uso de JavaFX e Python.</p>
+                    </div>
+                </div>
+
+                <div class="frameworks">
+                    <div class="giro">
+                        <img id="sass-logo" src="img/sass-icon.png" alt="Sass logo">
+                        <img id="react-logo" src="img/react-icon.png" alt="React logo">
+                        <img id="bootstrap-logo"src="img/bootstrap-icon.png" alt="Bootstrap logo">
+                    </div>
+
+                    <div class="texto2">
+                        <h1>Frameworks</h1>
+                        <p>Realizo projetos utilizando ReactJS com auxílio de Sass para organização do CSS. Também possuo noções de Bootstrap e consumo de APIs.</p>
+                    </div>
+                </div>
+                
             </section>
             
             <section id="projetos">
                 <h1>Projetos</h1>
             </section>
         </div>
+
+
     </main>
+
+    <div class="slide">
+        <div class="barra active" id="barra1"></div>
+        <div class="barra" id="barra2"></div>
+        <div class="barra" id="barra3"></div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
